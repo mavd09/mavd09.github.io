@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mavd09.github.io/"/>
-  <updated>2017-09-30T14:42:22.108Z</updated>
+  <updated>2017-09-30T16:18:10.404Z</updated>
   <id>http://mavd09.github.io/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <title>Bresenham&#39;s line algorithm</title>
     <link href="http://mavd09.github.io/2017/09/30/rendering/"/>
     <id>http://mavd09.github.io/2017/09/30/rendering/</id>
-    <published>2017-09-30T14:42:22.108Z</published>
-    <updated>2017-09-30T14:42:22.108Z</updated>
+    <published>2017-09-30T16:18:10.404Z</published>
+    <updated>2017-09-30T16:18:10.404Z</updated>
     
-    <content type="html"><![CDATA[<!-- excerpt --></p><p>Este algoritmo se encarga de determinar los puntos que deben ser usados en un raster n-dimensional con el fin de obtener una aproximacion lo mas cercana a una linea recta entre dos puntos.</p>]]></content>
+    <content type="html"><![CDATA[<!-- excerpt --></p><p>Este algoritmo se encarga de determinar los puntos que deben ser usados en un raster n-dimensional con el fin de obtener una aproximacion lo mas cercana a una linea recta entre dos puntos. Su principal caracteristica es realizar calculos con los numeros enteros.</p><center><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ejemplo_de_Bresenham.gif/220px-Ejemplo_de_Bresenham.gif" alt="Bresenham ejemplo"><br></center><h1 id="Algo-de-historia…"><a href="#Algo-de-historia…" class="headerlink" title="Algo de historia…"></a>Algo de historia…</h1><p>Jack Elton Bresenham desarrollo este algoritmo en 1962 para IBM, con el fin de poder dibujar sobre un ploter de Calcomp (es de los primeros dispositivos con salida grafica que estuvo a la venta). El uso libre de copias de los programas entre empleados de la misma empresa permitio que algunos compa;eros de Bresenham le pidieran permiso para presentarlo en nombre de el en una convencion de la ACM que se realizaria en Denver (CO) en 1963, a lo cual acepto y para 1965 salio impreso el paper por primera vez.<br>El algoritmo de Bresenham fue extendido con el fin de no solo producir lineas, si no tambien circulos.</p><h1 id="Algoritmo"><a href="#Algoritmo" class="headerlink" title="Algoritmo"></a>Algoritmo</h1>]]></content>
     
     <summary type="html">
     
