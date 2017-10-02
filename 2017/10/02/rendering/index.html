@@ -19,16 +19,17 @@
 <meta name="keywords" content="Bresenham,line">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Bresenham&#39;s line algorithm">
-<meta property="og:url" content="http://mavd09.github.io/2017/09/30/rendering/index.html">
+<meta property="og:url" content="http://mavd09.github.io/2017/10/02/rendering/index.html">
 <meta property="og:site_name" content="Manuel Vergara&#39;s note">
 <meta property="og:description" content="Este algoritmo se encarga de determinar los puntos que deben ser usados en un raster n-dimensional con el fin de obtener una aproximacion lo mas cercana a una linea recta entre dos puntos.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ejemplo_de_Bresenham.gif/220px-Ejemplo_de_Bresenham.gif">
-<meta property="og:updated_time" content="2017-09-30T16:18:10.404Z">
+<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2NW1oRFo0RUV5ZW8">
+<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2aGp0bTVMajJzNUE">
+<meta property="og:updated_time" content="2017-10-02T10:41:50.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bresenham&#39;s line algorithm">
 <meta name="twitter:description" content="Este algoritmo se encarga de determinar los puntos que deben ser usados en un raster n-dimensional con el fin de obtener una aproximacion lo mas cercana a una linea recta entre dos puntos.">
-<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ejemplo_de_Bresenham.gif/220px-Ejemplo_de_Bresenham.gif">
+<meta name="twitter:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2NW1oRFo0RUV5ZW8">
 <meta name="twitter:creator" content="@mavd0909">
     
     
@@ -38,12 +39,12 @@
         <meta property="og:image" content="https://pbs.twimg.com/profile_images/908531567743582208/V5KGATjM_400x400.jpg"/>
     
     
-        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/cd/Linea_basica_y_de_errores.png"/>
-        <meta class="swiftype" name="image" data-type="enum" content="https://upload.wikimedia.org/wikipedia/commons/c/cd/Linea_basica_y_de_errores.png" />
+        <meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2akZSYmFIemROSDg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2akZSYmFIemROSDg" />
     
     
-        <meta property="og:image" content="http://mavd09.github.io/2017/09/30/rendering/programming.jpg"/>
-        <meta class="swiftype" name="image" data-type="enum" content="http://mavd09.github.io/2017/09/30/rendering/programming.jpg" />
+        <meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2Y1ZKZVA2d1BfLTg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2Y1ZKZVA2d1BfLTg" />
     
     
     <!--STYLES-->
@@ -260,7 +261,7 @@
         <div class="post-header-cover
                     text-center
                     "
-             style="background-image:url('/2017/09/30/rendering/programming.jpg');"
+             style="background-image:url('https://drive.google.com/uc?id=0B6wfKMQSUFS2Y1ZKZVA2d1BfLTg');"
              data-behavior="4">
             
                 <div class="post-header main-content-wrap text-center">
@@ -271,9 +272,9 @@
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-09-30T11:18:10-05:00">
+    <time itemprop="datePublished" datetime="2017-10-02T05:41:50-05:00">
 	
-		    Sep 30, 2017
+		    Oct 02, 2017
     	
     </time>
     
@@ -302,10 +303,19 @@
         <div class="main-content-wrap">
             <!-- excerpt --></p>
 <p>Este algoritmo se encarga de determinar los puntos que deben ser usados en un raster n-dimensional con el fin de obtener una aproximacion lo mas cercana a una linea recta entre dos puntos. Su principal caracteristica es realizar calculos con los numeros enteros.</p>
-<center><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ejemplo_de_Bresenham.gif/220px-Ejemplo_de_Bresenham.gif" alt="Bresenham ejemplo"><br></center>
+<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2NW1oRFo0RUV5ZW8" alt="Bresenham ejemplo"><br></center>
 
 <h1 id="Algo-de-historia…"><a href="#Algo-de-historia…" class="headerlink" title="Algo de historia…"></a>Algo de historia…</h1><p>Jack Elton Bresenham desarrollo este algoritmo en 1962 para IBM, con el fin de poder dibujar sobre un ploter de Calcomp (es de los primeros dispositivos con salida grafica que estuvo a la venta). El uso libre de copias de los programas entre empleados de la misma empresa permitio que algunos compa;eros de Bresenham le pidieran permiso para presentarlo en nombre de el en una convencion de la ACM que se realizaria en Denver (CO) en 1963, a lo cual acepto y para 1965 salio impreso el paper por primera vez.<br>El algoritmo de Bresenham fue extendido con el fin de no solo producir lineas, si no tambien circulos.</p>
-<h1 id="Algoritmo"><a href="#Algoritmo" class="headerlink" title="Algoritmo"></a>Algoritmo</h1>
+<h1 id="Algoritmo"><a href="#Algoritmo" class="headerlink" title="Algoritmo"></a>Algoritmo</h1><p>Podemos trazar una linea recta con un lapiz en un pedazo de papel sin problemas, sin preocupaciones de como la podemos representar, pero si estamos en un sistema que consiste de pixeles en donde la minima unidad que podemos pintar es un pixel, representar nuestra linea se vuelve algo complejo pues ya no va a ser una linea perfecta y adicionalmente tenemos que tomar la decision de que pixeles debemos pintar con el fin de que se parezca lo mejor posible a la linea imaginaria que deseamos hacer.</p>
+<p>Ahora bien, de que manera determinamos que pixeles pintar?</p>
+<p>Consideremos el proceso de conversion para lineas con pendiente positiva <code>0 &lt; m &lt; 1</code>, comenzando desde el punto mas a la izquierda de la linea en cuestion, y mediante un proceso secuencial vamos a ir mirando que pixel pintar en la siguiente columna (esto se determina mirando que pixel esta mas cerca a la linea trazada). Para lo ultimo, es necesario que que realicemos un muestreo en <code>x</code> y en <code>y</code> (pueden ser los valores medios de cada pixel) con el fin de obtener otra cuadricula y asi facilitar la determinacion de que pixel esta mas cerca para un punto en especifico.</p>
+<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2aGp0bTVMajJzNUE" alt="Bresenham trazado"><br></center>
+
+<h1 id="Bibliografia"><a href="#Bibliografia" class="headerlink" title="Bibliografia"></a>Bibliografia</h1><ul>
+<li><em><a href="https://es.wikipedia.org/wiki/Algoritmo_de_Bresenham" target="_blank" rel="external">https://es.wikipedia.org/wiki/Algoritmo_de_Bresenham</a></em></li>
+<li><em><a href="http://www.cannes.itam.mx/Alfredo/Espaniol/Cursos/Grafica/Linea.pdf" target="_blank" rel="external">http://www.cannes.itam.mx/Alfredo/Espaniol/Cursos/Grafica/Linea.pdf</a></em></li>
+<li><em><a href="http://www.nosolounix.com/2010/05/algoritmo-bresenham-dibujar-linea.html" target="_blank" rel="external">http://www.nosolounix.com/2010/05/algoritmo-bresenham-dibujar-linea.html</a></em></li>
+</ul>
             
         </div>
     </div>
@@ -350,7 +360,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -358,7 +368,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -366,7 +376,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -432,7 +442,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -440,7 +450,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -448,7 +458,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -473,7 +483,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
                 </a>
             </li>
@@ -481,7 +491,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-twitter"></i><span>Share on Twitter</span>
                 </a>
             </li>
@@ -489,7 +499,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://mavd09.github.io/2017/09/30/rendering/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://mavd09.github.io/2017/10/02/rendering/">
                     <i class="fa fa-google-plus"></i><span>Share on Google+</span>
                 </a>
             </li>
@@ -559,19 +569,19 @@
                 <div class="media">
                     
                     <div class="media-left">
-                        <a class="link-unstyled" href="http://mavd09.github.io/2017/09/30/rendering/">
-                            <img class="media-image" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Linea_basica_y_de_errores.png" width="90" height="90"/>
+                        <a class="link-unstyled" href="http://mavd09.github.io/2017/10/02/rendering/">
+                            <img class="media-image" src="https://drive.google.com/uc?id=0B6wfKMQSUFS2akZSYmFIemROSDg" width="90" height="90"/>
                         </a>
                     </div>
                     
                     <div class="media-body">
-                        <a class="link-unstyled" href="http://mavd09.github.io/2017/09/30/rendering/">
+                        <a class="link-unstyled" href="http://mavd09.github.io/2017/10/02/rendering/">
                             <h3 class="media-heading">Bresenham&#39;s line algorithm</h3>
                         </a>
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Sep 30, 2017
+                                    Oct 2, 2017
                                 
                             </span>
                         </span>
@@ -595,7 +605,7 @@
 </div>
 
         
-<div id="cover" style="background-image:url('/assets/images/programming.jpg');"></div>
+<div id="cover" style="background-image:url('https://drive.google.com/uc?id=0B6wfKMQSUFS2Y1ZKZVA2d1BfLTg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-ivwiy10zeb8fifc4swnhkwneuk64y53w2scmdmtp8thi9cqfxh31aowtroaz.min.js"></script>
 <!--SCRIPTS END-->
