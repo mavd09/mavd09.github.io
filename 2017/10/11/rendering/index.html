@@ -31,10 +31,11 @@
 <meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2Z3o1ZXNEV3RjN0k">
 <meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2R1pzTFZnLVRncjA">
 <meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2bUEyVDN4czdfS0E">
-<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2RmZFQUNiY3Z2LU0">
-<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2RmZFQUNiY3Z2LU0">
-<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2RmZFQUNiY3Z2LU0">
-<meta property="og:updated_time" content="2017-10-11T15:03:54.278Z">
+<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2RDZZZFVLRkFHZDA">
+<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2NE9NWVRHZk5CRmM">
+<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2djZQYndhU1B5S0k">
+<meta property="og:image" content="https://drive.google.com/uc?id=0B6wfKMQSUFS2dGVUUjQySnJDZEk">
+<meta property="og:updated_time" content="2017-10-11T15:24:37.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bresenham&#39;s line algorithm">
 <meta name="twitter:description" content="Este algoritmo se encarga de determinar los puntos que deben ser usados en un raster n-dimensional con el fin de obtener una aproximacion lo mas cercana a una linea recta entre dos puntos.">
@@ -281,7 +282,7 @@
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-10-11T10:03:54-05:00">
+    <time itemprop="datePublished" datetime="2017-10-11T10:24:37-05:00">
 	
 		    Oct 11, 2017
     	
@@ -328,19 +329,19 @@
 <center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2aGhsSkZrMnVWUjg" alt=""><br></center>
 
 <p>De ahi obtenemos <code>d_1</code> y <code>d_2</code> realizando aritmetica sobre la ecuacion de la linea presentada anteriormente</p>
-<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2Z3o1ZXNEV3RjN0k" alt=""><br></center><br><center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2R1pzTFZnLVRncjA" alt=""><br></center>
+<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2Z3o1ZXNEV3RjN0k" alt=""><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2R1pzTFZnLVRncjA" alt=""><br></center>
 
 <p>La diferencia entre las dos separaciones entonces es</p>
 <center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2bUEyVDN4czdfS0E" alt=""><br></center>
 
 <p>Para definir un parametro de decision <code>p_k</code> para la iteracion k en el algoritmo, se obtiene si se reorganiza la ecuacion de tal manera que solo se tengan que realizar calculos enteros. Esto se logra expresando la pendiente <code>m</code>, segun su definicion, como la division entre la diferencia de <code>y</code> y la diferencia de <code>x</code>, asi</p>
-<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2RmZFQUNiY3Z2LU0" alt=""><br></center>
+<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2RDZZZFVLRkFHZDA" alt=""><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2NE9NWVRHZk5CRmM" alt=""><br></center>
 
 <p>Con esto, el signo de <code>p_k</code> es igual que el de la diferencia entre <code>d_1-d_2</code>, por lo tanto podemos definir lo siguiente</p>
-<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2RmZFQUNiY3Z2LU0" alt=""><br></center>
+<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2djZQYndhU1B5S0k" alt=""><br></center>
 
 <p>Por ultimo, si intentamos buscar el parametro para pasos siguientes podemos expresar <code>p_k+1</code> como sigue</p>
-<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2RmZFQUNiY3Z2LU0" alt=""><br></center>
+<center><br><img src="https://drive.google.com/uc?id=0B6wfKMQSUFS2dGVUUjQySnJDZEk" alt=""><br></center>
 
 <p>Entonces de esta manera ponemos saber que pixeles vamos pintando con el uso de operaciones que no requieren divisiones, y en donde se pueden definir facilmente los parametros.</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Ensure that x0 &lt;= x1 holds.</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">lineBresenham</span><span class="params">( <span class="keyword">int</span> x0, <span class="keyword">int</span> y0, <span class="keyword">int</span> x1, <span class="keyword">int</span> y1 )</span> </span>&#123;</div><div class="line">  <span class="keyword">int</span> dx = <span class="built_in">abs</span>(x1-x0);</div><div class="line">  <span class="keyword">int</span> dy = <span class="built_in">abs</span>(y1-y0);</div><div class="line">  <span class="keyword">int</span> p = <span class="number">2</span>*dy - dx;</div><div class="line">  <span class="keyword">for</span>( <span class="keyword">int</span> x = x0, y = y0; x &lt;= x1; x++ ) &#123;</div><div class="line">    <span class="comment">// Draw the point (x, y)</span></div><div class="line">    <span class="keyword">if</span>( p &lt; <span class="number">0</span> ) p = p + <span class="number">2</span>*dy;</div><div class="line">    <span class="keyword">else</span>        p = p + <span class="number">2</span>*(dy-dx), y = y + <span class="number">1</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
